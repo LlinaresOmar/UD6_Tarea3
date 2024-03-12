@@ -34,7 +34,17 @@ public class Compte {
     }
 
     public String generaIBAN(String entidad, String oficina, String dc, String cuenta){
+        /*
+        String iban = String.format("ES" + digitosControl + entidad + oficina + dc + cuenta);
+        if (compruebaIban(iban)){
+            return iban;
+        } else {
+            return null;
+        }*/
+    }
 
+    public String digitosControl(String entidad, String oficina, String dc, String cuenta){
+        String ibanSinControl =
     }
 
 }
