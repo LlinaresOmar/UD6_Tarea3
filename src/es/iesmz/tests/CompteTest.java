@@ -41,5 +41,9 @@ class CompteTest {
         assertFalse(c.compruebaIban());
     }
 
-
+    @Test
+    void generaIban1(){
+        Compte c = new Compte("ES8200491500051234567892");
+        assertEquals("ES7100302053091234567895", c.generaIBAN("0030", "2053","09","1234567895"));
+    }
 }
